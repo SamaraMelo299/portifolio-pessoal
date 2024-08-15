@@ -170,6 +170,9 @@ h1:hover {
   transition: 0.5s ease;
 }
 
+.social-media a {
+  color: var(--purple-color);
+}
 .social-media a:hover {
   font-size: 60px;
 }
