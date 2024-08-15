@@ -172,11 +172,12 @@ h1:hover {
 }
 .social-media a:hover {
   font-size: 60px;
+  background: transparent;
 }
 
 .social-media i {
   padding-right: 10px;
-  color: #790fbf;
+  color: #500b7e;
 }
 
 .btn {
