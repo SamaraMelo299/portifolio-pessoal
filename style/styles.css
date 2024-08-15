@@ -12,6 +12,7 @@
 }
 
 :root {
+  --purple-dark: rgb(80, 11, 126);
   --purple-color: rgb(132, 14, 201);
   --black-color: rgb(34, 34, 34);
   --text-color: #fff;
@@ -177,7 +178,7 @@ h1:hover {
 
 .social-media i {
   padding-right: 10px;
-  color: #500b7e;
+  color: var(--purple-dark);
 }
 
 .btn {
@@ -338,7 +339,7 @@ span {
 .portfolio-container .portfolio-box {
   position: relative;
   border-radius: 2rem;
-  box-shadow: 0 0 1rem var(--purple-color);
+  box-shadow: 0 0 1rem var(--text-color);
   overflow: hidden;
   display: flex;
 }
@@ -421,7 +422,7 @@ span {
   padding: 1.5rem;
   font-size: 1.6rem;
   color: var(--text-color);
-  background: var(--purple-color);
+  background: var(--text-color);
   border-radius: 0.8rem;
   margin: 0.7rem 0;
 }
@@ -446,7 +447,7 @@ span {
   align-items: center;
   flex-wrap: wrap;
   padding: 0rem 5%;
-  background-color: var(--purple-color);
+  background-color: var(--black-color);
 }
 .footer-text {
   font-size: 1.6rem;
