@@ -104,6 +104,10 @@ section {
   margin-bottom: 1rem;
 }
 
+.home-content p {
+  margin-top: -35px;
+}
+
 h1 {
   margin-bottom: 3rem;
   color: var(--purple-color);
