@@ -38,3 +38,27 @@ window.onscroll = () => {
   menuIcon.classList.remove("fa-x");
   navbar.classList.remove("active");
 };
+
+/* SCROLL REVEAL */
+ScrollReveal({
+  distance: "80px",
+  duration: 2000,
+  delay: 200,
+});
+
+ScrollReveal().reveal(".home-content, heading", { origin: "top" });
+ScrollReveal().reveal(
+  ".home-img, .services-contaniner, .portfolio-box, .contact form",
+  { origin: "button" }
+);
+ScrollReveal().reveal(".home-contact h1, .about-img", { origin: "left" });
+ScrollReveal().reveal(".home-contactc p, .about-content", { origin: "right" });
+
+/* TYPED JS */
+const typed = new Typed(".multiple-text", {
+  strings: ["Front-End Developer", "Web Developer", "Full-Stack Developer"],
+  typeSpeed: 70,
+  backSpeed: 70,
+  backDelay: 1000,
+  loop: true,
+});
