@@ -89,12 +89,36 @@
     grid-template-columns: 1fr;
   }
   .home-img img {
-    width: 80vw;
-    margin-top: 8rem;
+    width: 85vw;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
   }
   .about-img img {
-    width: 85vw;
+    width: 100vw;
     margin-top: 4rem;
+  }
+  .about-content p {
+    margin-top: -10px;
+  }
+  .about-content .social-media {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: -20px;
+    margin-bottom: 50px;
+  }
+  .about-content .social-media i {
+    text-align: center;
+    width: 8rem;
+    font-size: 50px;
+  }
+  .about-content .social-media a {
+    padding: 10px 10px;
+  }
+  .about-content .social-media a:hover {
+    font-size: 50px;
+  }
+  .about-content #react {
+    width: 8rem;
   }
 }
 

@@ -78,7 +78,7 @@ section {
 #contact-btn {
   border: 3px solid #840ec9;
   padding: 10px 20px;
-  border-radius: 15px;
+  border-radius: 10px;
   transition: 0.5s ease;
 }
 
@@ -190,7 +190,7 @@ h1:hover {
   display: inline-block;
   padding: 1.2rem 3.3rem;
   background: var(--purple-color);
-  border-radius: 4rem;
+  border-radius: 1rem;
   box-shadow: 0 0 1rem var(--purple-color);
   color: var(--black-color);
   letter-spacing: 0.1rem;
