@@ -8,6 +8,19 @@
   header {
     padding: 2rem 3%;
   }
+  .home-img img {
+    width: 50vw;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+  }
+  .about-img img {
+    margin-top: 90px;
+    width: 40vw;
+  }
+  .about-content .social-media {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
   section {
     padding: 10rem 3%;
   }

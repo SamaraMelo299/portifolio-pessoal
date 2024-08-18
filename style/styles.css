@@ -180,6 +180,11 @@ h1:hover {
   background: transparent;
 }
 
+.social-media #tec:hover a {
+  font-size: 60px;
+  background: transparent;
+}
+
 .social-media i {
   padding-right: 16.5px;
   color: var(--purple-dark);
