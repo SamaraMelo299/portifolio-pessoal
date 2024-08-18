@@ -69,7 +69,7 @@
     flex-direction: column;
   }
   .about-img img {
-    width: 90vw;
+    width: 80vw;
     margin-top: 4rem;
   }
   .services h2 {
@@ -81,6 +81,10 @@
   }
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heading {
+    margin-top: 20px;
   }
 }
 
