@@ -118,7 +118,14 @@
     font-size: 50px;
   }
   .about-content #react {
-    width: 8rem;
+    width: 8.5rem;
+    font-style: 80px;
+  }
+  .portfolio-container {
+    padding: 20px;
+  }
+  .services-container .services-box {
+    font-style: 50px;
   }
 }
 
