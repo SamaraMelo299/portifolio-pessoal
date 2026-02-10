@@ -1,5 +1,6 @@
 💻 Samara Melo — Portfólio de Desenvolvedora
 
+
 🚀 Desenvolvedora Full Stack Jr | Java & Web Development
 
 🎓 Estudante de Análise e Desenvolvimento de Sistemas
@@ -7,8 +8,10 @@
 💡 Background em suporte técnico, infraestrutura e ambientes tecnológicos
 
 
+
 👉 Acesse o portfólio:
 🔗 https://samaramelo299.github.io/portifolio-pessoal/
+
 
 👩‍💻 Sobre Mim
 
