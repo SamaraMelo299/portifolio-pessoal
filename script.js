@@ -49,12 +49,16 @@ function setActiveLink() {
 
 window.addEventListener("scroll", () => {
     setActiveLink();
+
+    // Close menu when scrolling (mobile)
     if (menuIcon && navbar) {
         menuIcon.classList.remove("fa-x");
         navbar.classList.remove("active");
         menuIcon.setAttribute("aria-expanded", "false");
     }
 });
+
+// Ensure correct state on load
 setActiveLink();
 
 /* =============================
@@ -128,6 +132,7 @@ function validateForm() {
     const subject = document.querySelector("#subject");
     const message = document.querySelector("#message");
 
+    // Full name
     if (!fullName?.value?.trim()) {
         setError(fullName, "Informe seu nome.");
         isValid = false;
@@ -138,6 +143,7 @@ function validateForm() {
         setError(fullName, "");
     }
 
+    // Email
     const emailValue = (email?.value || "").trim();
     const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue);
     if (!emailValue) {
@@ -150,6 +156,7 @@ function validateForm() {
         setError(email, "");
     }
 
+    // Mobile (BR: 10–11 digits)
     const phone = normalizePhone(mobile?.value);
     if (!phone) {
         setError(mobile, "Informe seu telefone.");
@@ -161,6 +168,7 @@ function validateForm() {
         setError(mobile, "");
     }
 
+    // Subject (select or input)
     if (!subject?.value?.trim()) {
         setError(subject, "Selecione o motivo do contato.");
         isValid = false;
@@ -168,6 +176,7 @@ function validateForm() {
         setError(subject, "");
     }
 
+    // Message
     if (!message?.value?.trim()) {
         setTextareaError("Escreva sua mensagem.");
         isValid = false;
@@ -192,11 +201,9 @@ function setStatus(text, ok = true) {
 function clearStatus() {
     const status = document.querySelector("#form-status");
     if (!status) return;
-
     status.textContent = "";
     status.classList.remove("ok", "bad");
 }
-
 
 /* =============================
    MODAL (criado via JS)
@@ -230,18 +237,23 @@ function ensureModal() {
 
     // click fora fecha
     overlay.addEventListener("click", (e) => {
-        if (e.target === overlay) hideModal();
+        if (e.target === overlay) hideModal({ updateStatus: true });
     });
 
     // ESC fecha
     document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") hideModal();
+        if (e.key === "Escape") hideModal({ updateStatus: true });
     });
 
-    overlay.querySelector("[data-wa-close]")?.addEventListener("click", hideModal);
+    overlay.querySelector("[data-wa-close]")?.addEventListener("click", () => {
+        hideModal({ updateStatus: true });
+    });
+
     overlay.querySelector("[data-wa-open]")?.addEventListener("click", () => {
         if (window.__WA_URL__) window.open(window.__WA_URL__, "_blank", "noopener,noreferrer");
+        setStatus("WhatsApp aberto. Se precisar, edite e clique em Enviar.", true);
     });
+
     overlay.querySelector("[data-wa-copy]")?.addEventListener("click", async () => {
         try {
             if (window.__WA_TEXT__) await navigator.clipboard.writeText(window.__WA_TEXT__);
@@ -260,27 +272,35 @@ function showModal() {
     document.documentElement.classList.add("wa-lock");
 }
 
-function hideModal() {
+function hideModal({ updateStatus = false } = {}) {
     const overlay = document.querySelector(".wa-modal-overlay");
     if (!overlay) return;
+
     overlay.classList.remove("is-open");
     document.documentElement.classList.remove("wa-lock");
+
+    // ✅ aqui é o ajuste que você pediu:
+    // quando fechar o modal, muda a frase abaixo do formulário
+    if (updateStatus) {
+        setStatus("Mensagem preparada. Fique à vontade para enviar quando quiser.", true);
+    }
 }
 
 // garante que não fica preso após refresh
-hideModal();
+hideModal({ updateStatus: false });
 
 /* =============================
    SUBMIT HANDLER
 ============================= */
 if (form) {
-    // validação ao sair do campo
+    // Live validation (on blur)
     form.querySelectorAll("input, textarea, select").forEach((el) => {
         el.addEventListener("blur", validateForm);
     });
 
     form.addEventListener("submit", (e) => {
-        e.preventDefault(); // <- IMPede voltar topo/recarregar
+        // ✅ impede voltar para o topo / recarregar
+        e.preventDefault();
         e.stopPropagation();
 
         const ok = validateForm();
@@ -332,7 +352,7 @@ Fico no aguardo do seu retorno. Obrigado(a)!`;
         window.open(url, "_blank", "noopener,noreferrer");
         setStatus("Abrindo WhatsApp para envio…", true);
 
-        // mostra modal (melhor UX)
+        // mostra modal (UX)
         showModal();
 
         // opcional: limpar
