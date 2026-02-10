@@ -308,7 +308,7 @@ if (form) {
         const assunto = subjectLabelMap[subject] || subject || "Contato";
 
         const text =
-            `Olá Samara, tudo bem? 👋
+            `Olá Samara, tudo bem?
 
 Acessei seu portfólio e gostaria de conversar melhor.
 
