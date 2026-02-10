@@ -102,4 +102,5 @@ Participar de projetos reais e colaborativos
 Crescimento contínuo na área de tecnologia
 
 ⭐ Obrigada pela visita ao meu portfólio!
+
 Estou sempre aberta a aprendizado, colaboração e novas oportunidades na área de tecnologia.
