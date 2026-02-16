@@ -330,7 +330,7 @@ if (form) {
         const text =
             `Olá Samara, tudo bem?
 
-Acessei seu portfólio e gostaria de conversar melhor.
+Acessei seu portfólio e gostaria de mais informações.
 
 Nome: ${fullName}
 E-mail: ${email}

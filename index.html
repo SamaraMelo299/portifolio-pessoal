@@ -1,335 +1,365 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <link rel="stylesheet" href="style/styles.css" />
-    <link rel="stylesheet" href="style/media.css" />
-    <title>Portifólio | SM</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- THANK YOU MODAL -->
-  <div class="contact-modal" id="contact-modal" aria-hidden="true">
-    <div class="contact-modal__card" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
-      <h3 id="contact-modal-title">Mensagem pronta ✅</h3>
-      <p>Seu WhatsApp foi aberto com a mensagem preenchida. Só falta <strong>enviar</strong>.</p>
+  <link rel="stylesheet" href="style/styles.css" />
+  <link rel="stylesheet" href="style/media.css" />
+  <title>Portifólio | SM</title>
+</head>
 
-      <div class="contact-modal__actions">
-        <button type="button" class="btn btn-primary" id="retry-wa">Abrir WhatsApp</button>
-        <button type="button" class="btn btn-secondary" id="close-wa">Fechar</button>
-      </div>
+<!-- THANK YOU MODAL -->
+<div class="contact-modal" id="contact-modal" aria-hidden="true">
+  <div class="contact-modal__card" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+    <h3 id="contact-modal-title">Mensagem pronta ✅</h3>
+    <p>Seu WhatsApp foi aberto com a mensagem preenchida. Só falta <strong>enviar</strong>.</p>
 
-      <button type="button" class="contact-modal__copy" id="copy-wa">
-        Copiar mensagem manualmente
-      </button>
+    <div class="contact-modal__actions">
+      <button type="button" class="btn btn-primary" id="retry-wa">Abrir WhatsApp</button>
+      <button type="button" class="btn btn-secondary" id="close-wa">Fechar</button>
     </div>
+
+    <button type="button" class="contact-modal__copy" id="copy-wa">
+      Copiar mensagem manualmente
+    </button>
   </div>
+</div>
 
-  <body>
-    
-    <!-- HEADER DESING -->
-    <header class="header">
-      <a href="#" class="logo">&lt Portifólio | SM /&gt</a>
+<body>
 
-      <i class="fa-solid fa-bars" id="menu-icon" aria-label="Open menu" aria-expanded="false" role="button" tabindex="0"></i>
+  <!-- HEADER DESING -->
+  <header class="header">
+    <a href="#" class="logo">&lt Portifólio | SM /&gt</a>
 
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#portfolio">Projects</a>
-        <a href="#services">Services</a>
-        <a href="#contact" id="contact-btn">Contact</a>
-      </nav>
-    </header>
+    <i class="fa-solid fa-bars" id="menu-icon" aria-label="Open menu" aria-expanded="false" role="button"
+      tabindex="0"></i>
 
-    <!-- HOME SECTION DESING -->
-    <section class="home" id="home">
-      <div class="home-content">
-        <h3 class="ola">Olá, eu sou a</h3>
-        <h1 id="name">Samara Melo ツ</h1>
-        <h3><span class="multiple-text"></span></h3>
-        <p>
-          <strong>Desenvolvedora Full Stack Jr</strong> com foco em
-          <strong>Java</strong> e <strong>Spring Boot</strong>, atuando na criação de
-          <strong>APIs REST</strong> e aplicações web. Tenho interesse em desenvolver
-          soluções bem estruturadas, com atenção à qualidade do código, performance
-          e evolução constante na área de tecnologia.
-        </p>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#contact" id="contact-btn">Contact</a>
+    </nav>
+  </header>
 
-        <!---->
+  <!-- HOME SECTION DESING -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3 class="ola">Olá, eu sou a</h3>
+      <h1 id="name">Samara Melo ツ</h1>
+      <h3><span class="multiple-text"></span></h3>
+      <p>
+        <strong>Desenvolvedora Full Stack Jr</strong> com foco em
+        <strong>Java</strong> e <strong>Spring Boot</strong>, atuando na criação de
+        <strong>APIs REST</strong> e aplicações web. Tenho interesse em desenvolver
+        soluções bem estruturadas, com atenção à qualidade do código, performance
+        e evolução constante na área de tecnologia.
+      </p>
 
-        <div class="social-media">
-          <a href="https://github.com/SamaraMelo299" target="_blank" rel="noopener"><i class="fa-brands fa-square-github"></i></a>
-          <a href="https://www.linkedin.com/in/samara-melo-262941187/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/samara.melo299/" target="_blank" rel="noopener"><i class="fa-brands fa-square-instagram"></i></a>
-          <a href="https://wa.me/5511977514777" target="_blank" rel="noopener"><i class="fa-brands fa-square-whatsapp"></i></a>
-        </div>
-        <br />
-        <a href="src/cv_samaramelo.pdf" download="cv_samaramelo.pdf" class="btn">Download CV</a>
+
+      <!---->
+
+      <div class="social-media">
+        <a href="https://github.com/SamaraMelo299" target="_blank" rel="noopener"><i
+            class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.linkedin.com/in/samara-melo-262941187/" target="_blank" rel="noopener"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/samara.melo299/" target="_blank" rel="noopener"><i
+            class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://wa.me/5511977514777" target="_blank" rel="noopener"><i
+            class="fa-brands fa-square-whatsapp"></i></a>
+      </div>
+      <br />
+      <a href="src/cv_samaramelo.pdf" download="cv_samaramelo.pdf" class="btn">Download CV</a>
+    </div>
+
+    <div class="home-img">
+      <a href="https://github.com/SamaraMelo299" target="_blank"><img src="src/perfil1.png" alt="" /></a>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION DESING -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="src/about1.png" alt="" />
+    </div>
+
+    <div class="about-content">
+      <h2 class="heading">ABOUT <span>ME</span></h2>
+      <h3>Full Stack Jr. | Java & Spring Boot | Web Development</h3>
+      <p>
+        Tenho experiência no desenvolvimento de aplicações web utilizando
+        <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>Node.js</strong> e
+        <strong>SQL</strong>, atuando na criação de <strong>APIs REST</strong>,
+        integração com <strong>bancos de dados</strong> e construção de interfaces
+        modernas com <strong>HTML</strong>, <strong>CSS</strong>,
+        <strong>JavaScript</strong>, <strong>TypeScript</strong> e <strong>React</strong>.
+        Minha vivência anterior em <strong>suporte técnico</strong>,
+        <strong>infraestrutura</strong> e <strong>redes</strong> contribuiu para uma
+        visão mais ampla dos sistemas, facilitando a análise de problemas, organização
+        de processos e desenvolvimento de soluções eficientes. Atualmente sigo
+        fortalecendo minha carreira com foco em <strong>backend Java</strong>,
+        <strong>Node.js</strong> e aplicações <strong>web fullstack</strong>.
+      </p>
+
+      <div class="social-media">
+        <a href="#"><i class="fa-brands fa-java"></i></a>
+        <a href="#"><i class="fa-solid fa-leaf"></i></a>
+        <a href="#"><i class="fa-brands fa-node-js"></i></a>
+        <a href="#"><i class="fa-brands fa-js"></i></a>
+        <a href="#"><i class="fa-brands fa-react"></i></a>
+        <a href="#"><i class="fa-brands fa-html5"></i></a>
+        <a href="#"><i class="fa-brands fa-css3-alt"></i></a>
+        <a href="#"><i class="fa-solid fa-database"></i></a>
+
       </div>
 
-      <div class="home-img">
-        <a href="https://github.com/SamaraMelo299" target="_blank"
-          ><img src="src/perfil1.png" alt=""
-        /></a>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ABOUT SECTION DESING -->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="src/about1.png" alt="" />
-      </div>
+  <!-- PORTFOLIO SECTION DESING -->
+  <section class="portfolio" id="portfolio">
 
-      <div class="about-content">
-        <h2 class="heading">ABOUT <span>ME</span></h2>
-        <h3>Full Stack Jr. | Java & Spring Boot | Web Development</h3>
-        <p>
-          Tenho experiência no desenvolvimento de sistemas web utilizando
-          <strong>Java</strong>, <strong>Spring Boot</strong> e <strong>SQL</strong>,
-          além de atuação com tecnologias front-end como
-          <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>,
-          <strong>TypeScript</strong> e <strong>React</strong>.
-          Minha vivência anterior em <strong>suporte técnico</strong>,
-          <strong>infraestrutura</strong> e <strong>redes</strong> contribuiu para
-          uma visão mais ampla dos sistemas, facilitando análise de problemas,
-          organização de processos e desenvolvimento de soluções mais eficientes.
-          Atualmente sigo fortalecendo minha carreira no desenvolvimento, com foco
-          em backend Java e aplicações web.
-        </p>
+    <h2 class="heading">Latest <span>Projects</span></h2>
 
-        <div class="social-media">
-          <a href="#"><i class="fa-brands fa-java"></i></a>
-          <a href="#"><i class="fa-solid fa-leaf"></i></a> <!-- Spring Boot -->
-          <a href="#"><i class="fa-brands fa-html5"></i></a>
-          <a href="#"><i class="fa-brands fa-css3-alt"></i></a>
-          <a href="#"><i class="fa-brands fa-js"></i></a>
-          <a href="#"><i class="fa-brands fa-react"></i></a>
-          <a href="#"><i class="fa-brands fa-python"></i></a>
-          <a href="#"><i class="fa-solid fa-database"></i></a>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- PORTFOLIO SECTION DESING -->
-    <section class="portfolio" id="portfolio">
-  
-      <h2 class="heading">Latest <span>Projects</span></h2>
-
-      <div class="portfolio-container">
-
-        <div class="portfolio-box">
-          <img src="src/agendador1.png" alt="Sistema de Agendamento" />
-
-          <div class="portfolio-layer">
-            <h4>CRUD Agendador de Horários</h4>
-
-            <p>
-              Sistema desenvolvido com Java e
-              Spring Boot para gerenciamento de agendamentos,
-              com operações CRUD, APIs REST e integração com banco SQL.
-            </p>
-
-            <a href="https://github.com/SamaraMelo299/agendador-horarios" target="_blank">
-              <i class="fa-solid fa-up-right-from-square"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="src/1.png" alt="Nike Store" />
-
-          <div class="portfolio-layer">
-            <h4>Nike Store</h4>
-
-            <p>
-              Landing page inspirada em e-commerce, com layout moderno,
-              responsivo e foco em UI/UX.
-            </p>
-
-            <a href="https://samaramelo299.github.io/nike-store/" target="_blank">
-              <i class="fa-solid fa-up-right-from-square"></i>
-            </a>
-          </div>
-        </div>
+    <div class="portfolio-container">
 
       <div class="portfolio-box">
-          <img src="src/2.png" alt="" />
-          <div class="portfolio-layer">
-            <h4>Landing Page</h4>
-            <p>
-              Página de apresentação responsiva com seções, animações e CTA.
-            </p>
-            <a href="https://samaramelo299.github.io/landing-page/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
+        <img src="src/user_registration.png" alt="CRUD User Registration Fullstack" />
 
-        <div class="portfolio-box">
-          <img src="src/3.png" alt="" />
-          <div class="portfolio-layer">
-            <h4>Página de Login</h4>
-            <p>
-              Tela de login com validações básicas e layout moderno.
-            </p>
-            <a href="https://samaramelo299.github.io/login/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
+        <div class="portfolio-layer">
+          <h4>CRUD User Registration</h4>
 
-        <div class="portfolio-box">
-          <img src="src/4.png" alt="" />
-          <div class="portfolio-layer">
-            <h4>Lista de Tarefas</h4>
-            <p>
-              To-do list com criação, conclusão e remoção de tarefas (DOM).
-            </p>
-            <a href="https://samaramelo299.github.io/to-do-list/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
+          <p>
+            Aplicação fullstack para cadastro e gerenciamento de usuários,
+            desenvolvida com React no frontend e Node.js + Express no backend.
+            Inclui CRUD completo, API REST e integração com banco de dados via Prisma ORM.
+          </p>
 
-        <div class="portfolio-box">
-          <img src="src/5.png" alt="" />
-          <div class="portfolio-layer">
-            <h4>Cronômetro</h4>
-            <p>
-              Cronômetro com start/pause/reset e controle de tempo em JavaScript.
-            </p>
-            <a href="https://samaramelo299.github.io/stopwatch/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="src/6.png" alt="" />
-          <div class="portfolio-layer">
-            <h4>Animeflix</h4>
-            <p>
-              Catálogo de animes com navegação e layout estilo streaming.
-            </p>
-            <a href="https://samaramelo299.github.io/animeflix/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="src/7.png" alt="" />
-          <div class="portfolio-layer">
-            <h4>Previsão do Tempo</h4>
-            <p>
-              Consumo de API de clima com busca por cidade e exibição de dados.
-            </p>
-            <a href="https://samaramelo299.github.io/weather-forecast/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="src/9.png" alt="" />
-          <div class="portfolio-layer">
-            <h4>Calculadora de Juros Compostos</h4>
-            <p>
-              Cálculo de juros compostos com validação de dados e resultados claros.
-            </p>
-            <a href="https://samaramelo299.github.io/interest-calculator/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICES SECTION DESING -->
-    <section class="services" id="services">
-      <h2 class="heading">My <span>Services</span></h2>
-
-      <div class="services-container">
-        <div class="services-box">
-          <i class="fa-solid fa-laptop-code"></i>
-          <h3>Landing Page</h3>
-        </div>
-
-        <div class="services-box">
-          <i class="fa-solid fa-cart-shopping"></i>
-          <h3>E-Commerce</h3>
+          <a href="https://github.com/SamaraMelo299/user-registration" target="_blank" rel="noopener">
+            <i class="fa-solid fa-up-right-from-square"></i>
+          </a>
         </div>
       </div>
 
-      <div class="services-container">
-        <div class="services-box">
-          <i class="fa-solid fa-mug-hot"></i>
-          <h3>Web Site</h3>
+      <div class="portfolio-box">
+        <img src="src/agendador1.png" alt="Sistema de Agendamento" />
+
+        <div class="portfolio-layer">
+          <h4>CRUD Scheduler</h4>
+
+          <p>
+            Sistema desenvolvido com Java e
+            Spring Boot para gerenciamento de agendamentos,
+            com operações CRUD, APIs REST e integração com banco SQL.
+          </p>
+
+          <a href="https://github.com/SamaraMelo299/agendador-horarios" target="_blank">
+            <i class="fa-solid fa-up-right-from-square"></i>
+          </a>
         </div>
+      </div>
 
-        <div class="services-box">
-          <i class="fa-solid fa-user-check"></i>
-          <h3>Form Validation</h3>
+      <div class="portfolio-box">
+        <img src="src/1.png" alt="Nike Store" />
+
+        <div class="portfolio-layer">
+          <h4>Nike Store</h4>
+
+          <p>
+            Landing page inspirada em e-commerce esportivo, desenvolvida com foco em
+            responsividade, UI/UX e organização visual. Projeto voltado para prática
+            de HTML, CSS e JavaScript, explorando layout moderno, interatividade e
+            experiência do usuário.
+          </p>
+
+          <a href="https://samaramelo299.github.io/nike-store/" target="_blank">
+            <i class="fa-solid fa-up-right-from-square"></i>
+          </a>
         </div>
       </div>
-    </section>
 
-    <!-- CONTACT SECTION DESING -->
-    <section class="contact" id="contact" >
-
-          <h2 class="heading">Contact <span>Me</span></h2>
-          <form id="contact-form" novalidate method="post">
-             <div class="input-box">
-              <div class="field">
-                <input id="fullName" name="fullName" type="text" placeholder="Full Name" required minlength="3" />
-                <small class="error" aria-live="polite"></small>
-              </div>
-              <div class="field">
-                <input id="email" name="email" type="email" placeholder="Email Address" required />
-                <small class="error" aria-live="polite"></small>
-              </div>
-            </div>
-            <div class="input-box">
-              <div class="field">
-                <input id="mobile" name="mobile" type="tel" placeholder="Mobile Number" inputmode="tel" required />
-                <small class="error" aria-live="polite"></small>
-              </div>
-              <div class="field">
-                <select id="subject" name="subject" required>
-                  <option value="">Motivo do contato</option>
-                  <option value="vaga">Oportunidade de trabalho</option>
-                  <option value="freela">Projeto / Freelance</option>
-                  <option value="parceria">Parceria técnica</option>
-                  <option value="duvida">Dúvida técnica</option>
-                  <option value="outro">Outro assunto</option>
-                </select>
-                <small class="error" aria-live="polite"></small>
-              </div>
-            </div>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="Your Message"
-              required
-              minlength="10"
-            ></textarea>
-            <small class="error textarea-error" aria-live="polite"></small>
-            <p class="form-status" id="form-status" aria-live="polite"></p>
-
-            <button type="submit" class="btn">Send Message</button>
-          </form>
-    </section>
-
-    <!-- FOOTER SECTION DESING -->
-    <footer class="footer">
-      <div class="footer-text">
-        <p>Copyright &copy; <span id="year"></span> by Samara Melo | All Rights Reserved.</p>
+      <div class="portfolio-box">
+        <img src="src/2.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>Landing Page</h4>
+          <p>
+            Landing page desenvolvida com foco em responsividade, organização de layout
+            e experiência do usuário. Projeto voltado para prática de HTML, CSS e
+            JavaScript, explorando animações, seções estratégicas e elementos de conversão (CTA).
+          </p>
+          <a href="https://samaramelo299.github.io/landing-page/" target="_blank"><i
+              class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
       </div>
 
-      <div class="footer-iconTop">
-        <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+      <div class="portfolio-box">
+        <img src="src/4.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>To Do List</h4>
+          <p>
+            Aplicação interativa para gerenciamento de tarefas, permitindo criação,
+            conclusão e remoção de itens em tempo real. Desenvolvida com HTML, CSS e
+            JavaScript, explorando manipulação do DOM, lógica de estado e experiência do usuário.
+          </p>
+          <a href="https://samaramelo299.github.io/to-do-list/" target="_blank"><i
+              class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
       </div>
-    </footer>
-    <!-- SCROLL REVEAL JS-->
-    <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!-- TYPED JS-->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <div class="portfolio-box">
+        <img src="src/5.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>Stopwatch</h4>
+          <p>
+            Aplicação de cronômetro desenvolvida com HTML, CSS e JavaScript,
+            com funcionalidades de start, pause, reset e marcação de tempo.
+            Projeto focado em lógica de temporização, manipulação do DOM e
+            interatividade do usuário.
+          </p>
+          <a href="https://samaramelo299.github.io/stopwatch/" target="_blank"><i
+              class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
 
-    <!-- MAIN JS-->
-    <script src="script.js"></script>
-  </body>
+      <div class="portfolio-box">
+        <img src="src/6.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>Animeflix</h4>
+          <p>
+            Catálogo de animes inspirado em plataformas de streaming, desenvolvido
+            com HTML, CSS, JavaScript e jQuery. Projeto focado em navegação dinâmica,
+            organização de conteúdo visual e interatividade.
+          </p>
+          <a href="https://samaramelo299.github.io/animeflix/" target="_blank"><i
+              class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="src/7.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>Weather Forecast</h4>
+          <p>
+            Aplicação web com consumo de API de clima em tempo real,
+            permitindo busca por cidade e exibição de dados meteorológicos.
+            Projeto focado em integração com APIs externas, JavaScript assíncrono
+            e manipulação dinâmica do DOM.
+          </p>
+
+          <a href="https://samaramelo299.github.io/weather-forecast/" target="_blank"><i
+              class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="src/9.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>Interest Calculator</h4>
+          <p>
+            Aplicação web para cálculo de juros compostos com validação de dados
+            e exibição clara dos resultados. Projeto focado em lógica matemática,
+            JavaScript interativo e manipulação dinâmica do DOM.
+          </p>
+          <a href="https://samaramelo299.github.io/interest-calculator/" target="_blank"><i
+              class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION DESING -->
+  <section class="services" id="services">
+    <h2 class="heading">My <span>Services</span></h2>
+
+    <div class="services-container">
+      <div class="services-box">
+        <i class="fa-solid fa-laptop-code"></i>
+        <h3>Landing Page</h3>
+      </div>
+
+      <div class="services-box">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h3>E-Commerce</h3>
+      </div>
+    </div>
+
+    <div class="services-container">
+      <div class="services-box">
+        <i class="fa-solid fa-mug-hot"></i>
+        <h3>Web Site</h3>
+      </div>
+
+      <div class="services-box">
+        <i class="fa-solid fa-user-check"></i>
+        <h3>Form Validation</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION DESING -->
+  <section class="contact" id="contact">
+
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <form id="contact-form" novalidate method="post">
+      <div class="input-box">
+        <div class="field">
+          <input id="fullName" name="fullName" type="text" placeholder="Full Name" required minlength="3" />
+          <small class="error" aria-live="polite"></small>
+        </div>
+        <div class="field">
+          <input id="email" name="email" type="email" placeholder="Email Address" required />
+          <small class="error" aria-live="polite"></small>
+        </div>
+      </div>
+      <div class="input-box">
+        <div class="field">
+          <input id="mobile" name="mobile" type="tel" placeholder="Mobile Number" inputmode="tel" required />
+          <small class="error" aria-live="polite"></small>
+        </div>
+        <div class="field">
+          <select id="subject" name="subject" required>
+            <option value="">Motivo do contato</option>
+            <option value="vaga">Oportunidade de trabalho</option>
+            <option value="freela">Projeto / Freelance</option>
+            <option value="parceria">Parceria técnica</option>
+            <option value="duvida">Dúvida técnica</option>
+            <option value="outro">Outro assunto</option>
+          </select>
+          <small class="error" aria-live="polite"></small>
+        </div>
+      </div>
+      <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required
+        minlength="10"></textarea>
+      <small class="error textarea-error" aria-live="polite"></small>
+      <p class="form-status" id="form-status" aria-live="polite"></p>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER SECTION DESING -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; <span id="year"></span> by Samara Melo | All Rights Reserved.</p>
+    </div>
+
+    <div class="footer-iconTop">
+      <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+  </footer>
+  <!-- SCROLL REVEAL JS-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- TYPED JS-->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- MAIN JS-->
+  <script src="script.js"></script>
+</body>
+
 </html>
